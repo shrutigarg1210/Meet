@@ -1,0 +1,45 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-color: rgb(8, 3, 15); */
+    /* position: fixed; */
+    /* color: white; */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+  .nav{
+      width: 25vw;
+      padding-left: 40px;
+      align-items: center;
+  } 
+  #menu {
+      display: flex;
+    list-style-type: none;
+    align-items: center;
+    /* flex-direction: row; */
+    font-weight: 25px;
+    width: 50vw;
+    justify-content: center;
+    
+  }
+  #menu li {
+    margin: 0px 5px 0px 5px;
+  }
+  /*---------------------------------------------------------- LOGIN SECTION---------------------------------------------------- */
+  #modal-left{
+      display: flex;
+      flex-direction: column;
+      flex: 1px;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      padding:0px 10px 0px 0px
+      
+  
+  }
