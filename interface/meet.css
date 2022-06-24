@@ -13,185 +13,154 @@
     justify-content: space-between;
     background-color: black;
   }
-  .nav{
-      width: 25vw;
-      padding-left: 40px;
-      align-items: center;
-  } 
+  .nav {
+    width: 25vw;
+    padding-left: 40px;
+    align-items: center;
+  }
   #menu {
-    position: relative;
     display: flex;
     list-style-type: none;
     align-items: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     font-weight: 25px;
-    /* width: 50vw; */
-    justify-content: space-between;
-    align-items: center;
-    
+    width: 50vw;
+    justify-content: center;
   }
   #menu li {
     margin: 0px 5px 0px 5px;
   }
-  /*---------------------------------------------------------- LOGIN SECTION---------------------------------------------------- */
-  /* #modal-left{
-      display: flex;
-      flex-direction: column;
-      flex: 1px;
-      justify-content: center;
-      align-items: center;
-      height: 70px;
-      padding:0px 10px 0px 0px
+  /*--------------------------------------- LOGIN SECTION---------------------------------------------------- */
+  modal-content {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
   }
-   */
-   .modal-content {
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-}
-#login-section {
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-}
-.modal-left {
-    flex:1.5;
+  .modal-left {
     height: 100%;
-    padding: 0px 20px;
-    display:flex;
+    padding: 0px 25px;
+    display: flex;
     flex-direction: column;
+    /* flex: 1; */
     justify-content: center;
     align-items: center;
-}
-#login-section form, .login-sec {
+  }
+  #login-section {
     display: flex;
-    flex-direction: column;
-}
-#login-section form {
-    height: 300px;
+    flex-direction: row;
+    height: 362px;
+    /* justify-items: left; */
+  }
+  #login-section form {
+    height: 200px;
     justify-content: center;
     width: 100%;
-}
-.login-sec {
-    font-family: 'Nunito', sans-serif;
-    font-weight:500 ;
-    color: wheat;
-    padding: 10px 10px 8px;
-    border: 1px solid #ddd;
+  }
+ 
+  #login-section form, .login-sec{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .modal-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+  } */
+  .login-sec {
+    font-weight: 600;
+    padding: 10px 10px 7px;
+    border: 2px solid rgb(221, 209, 209);
     border-radius: 4px;
-    margin-bottom: 20px;
-    background-color: #3a3a3a;;
-}
-.login-sec input {
-    font-family: 'Roboto', sans-serif;
-    font-weight:300;
-    font-weight: 300;
+    background-color: black;
+    color: wheat;
+    margin-bottom: 15px;
+    justify-items: left;
+    box-shadow: 4px solid slategray;
+  }
+  .login-sec input {
+    /* background-color: wheat;
+    color: rgb(83, 19, 19); */
+    /* font-weight: bold; */
+    padding: 5px 0px 0px;
     outline: 0;
     border: 0;
-    padding: 4px 0 0; 
-    font-size: 14px;
+    border-radius: 10px;
     background-color: transparent;
-}
-.login-sec label {
-    font-size: 11px;
+  }
+  .login-sec label {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding-top: 1px;
     text-transform: uppercase;
-    font-weight:600;
-    letter-spacing: 0.7px;
-}
-.login-sec input:-ms-input-placeholder {
-    color: rgba(255, 252, 246, 0.719);
-    opacity: 1;
-}
-.login-sec input::placeholder {
-    color: rgba(255, 252, 246, 0.719);
-    opacity: 1;
-}
-.login-sec:focus-within {
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: small;
+  }
+  .login-sec :-ms-input-placeholder{
+    color: rgb(65, 63, 66);
+    opacity: 2;
+  }
+  .login-sec:focus-within{
     border-color: black;
-    background-color: #484848d9;
-    transition: 0.2s;
-}
-.login-btn {
-    width: 100%;
+  }
+  .login-btn {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-.login-rem {
-    font-family: 'Nunito', sans-serif;
-    font-weight:500;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 14px;
-}
-input:checked+label{
-    font-weight: bold;
-    color: black;
-}
-.login-sub input{
-    width: 90px;
-    height: 40px;
-    padding: 5px;
-    border:none;
-    color:wheat;
-    background-color: black;
-    border-radius: 4px;
-}
-.login-sub input:hover{
-    background-color: #3a3a3a;
-    transition: 0.3s;
-}
-.line {
-    width: fit-content;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-}
-#signup-btn {
-    width: 95px;
-    height: 30px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border: none;
-    color: wheat;
-    background-color: black;
-    border-radius: 30px;
-    font-size: 15px;
-}
-#signup-btn:hover{
-    box-shadow: 0px 5px 20px 1px rgb(0 0 0 / 51%);
-    background-color: #3a3a3a;
-    transition: 0.3s;
-}
-#signup-btn span{
-    position: relative;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-}
-.modal-right {
-    flex: 2;
-    font-size: 0;
-    transition: 0.3s;
-    overflow: hidden;
-}
-.modal-right img {
     width: 100%;
-    height: 100%;
-    /* -o-object-fit: cover;
-    object-fit: cover; */
-}
-.modal-right::before {
-    content: '';
-    width: 0;
-    height: 70%;
-    position: absolute;
-    border: 0.5px solid gray;
-    background-color: gray;
-    top: 60px;
-}
+  }
+  .login-rem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+  }
+  .login-sec input:hover{
+    background-color: aliceblue;
+  }
+  #login-section form,
+  .login-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-sub input {
+    padding: 4px;
+    width: 50px;
+    height: 38px;
+    background-color: black;
+    color: wheat;
+    border: none;
+    border-radius:  10px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+  }
+  
+  .account {
+    margin-top: 20px;
+    /* font-weight: bold; */
+  }
+  #signup-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  margin: 5px;
+  margin-left: 20px;
+  padding: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: wheat;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  }
+  #signup-button:hover{
+    background-color:rgb(28, 39, 54);
+    box-shadow: 4px 4px #888888
+  }
